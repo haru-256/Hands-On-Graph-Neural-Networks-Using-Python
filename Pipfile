@@ -1,0 +1,36 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+torch = "~=2.2.0"
+# torchvision = "~=0.17.0"
+# touchaudio = "~=2.2.0"
+pandas = "~=2.2.0"
+numpy = "~=1.26.4"
+gensim = "~=4.3.2"
+torch-geometric = "~=2.5.0"
+networkx = "~=2.8.8"
+matplotlib = "*"
+node2vec = "~=0.4.6"
+# seaborn = "*"
+scikit-learn = "*"
+# deepchem  = "*"
+# torch-geometric-temporal = "*"
+# captum = "*"
+ipykernel = "*"
+torch-scatter = "~=2.1.0"
+torch-sparse = "~=0.6.16"
+torch-cluster = "~=1.6.0"
+torch-spline-conv = "~=1.2.1"
+
+[dev-packages]
+ruff = "*"
+black = "*"
+isort = "*"
+mypy = "*"
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.8"
