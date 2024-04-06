@@ -14,7 +14,7 @@ lock: Pipfile # lock Pipfile
 	pipenv lock
 
 install: Pipfile.lock # install package by pipenv and pip
-	pipenv install --dev
+	pipenv sync --dev
 	# pipenvだとうまくbuildできなかった。M2が原因？
 	# https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html
 	pipenv run pip install torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.2.0+cpu.html
