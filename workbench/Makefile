@@ -5,6 +5,7 @@
 all: format lint lock # execute all target
 
 format: # format python file by ruff
+	ruff check --fix .
 	ruff format .
 
 lint: # lint python file by flake8 and mypy
