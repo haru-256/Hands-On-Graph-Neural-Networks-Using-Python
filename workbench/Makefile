@@ -12,7 +12,7 @@ lint: # lint python file by flake8 and mypy
 	ruff check .
 
 lock: Pipfile # lock Pipfile
-	pipenv lock
+	pipenv lock --dev
 
 install: Pipfile.lock # install package by pipenv and pip
 	pipenv sync --dev
